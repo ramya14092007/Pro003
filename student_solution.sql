@@ -1,14 +1,6 @@
- CREATE DATABASE IF NOT EXISTS CollegeDB;
-
-USE CollegeDB;
-
-CREATE TABLE IF NOT EXISTS Student (
-    StudentID INT PRIMARY KEY,
-    StudentName VARCHAR(100),
-    Age INT,
-    Gender VARCHAR(10)
-);
+ USE CollegeDB
 
 ALTER TABLE Student
-ADD COLUMN Email VARCHAR(100),
-ADD COLUMN PhoneNumber VARCHAR(15);
+ADD COLUMN Email VARCHAR(255),
+ADD COLUMN PhoneNumber VARCHAR(10);
+
